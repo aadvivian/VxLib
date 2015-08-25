@@ -64,11 +64,11 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+    s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+    s.ios.deployment_target = "8.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
 
@@ -117,9 +117,9 @@ Pod::Spec.new do |s|
   #
 
   #s.framework  = "UIKit"
-   s.dependency 'Alamofire', '2.0.0-beta.1'
-   s.dependency 'CoreDataKit', '~> 0.6'
-   s.dependency 'SwiftyJSON', '2.2.1' 
+   s.dependency  'Alamofire', '2.0.0-beta.1'
+   s.dependency  'CoreDataKit', '~> 0.6'
+   #s.dependency  'SwiftyJSON' 
   #s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
