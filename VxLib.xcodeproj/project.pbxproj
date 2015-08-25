@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EF43826FFEE2B9331FA19DC /* Pods_VxLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17479D76EA38CE38F9979CC /* Pods_VxLib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3FE014741B8D03A200B48433 /* VxLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FE014731B8D03A200B48433 /* VxLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FE0147B1B8D03A200B48433 /* VxLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE014701B8D03A200B48433 /* VxLib.framework */; };
 		3FE014801B8D03A200B48433 /* VxLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0147F1B8D03A200B48433 /* VxLibTests.swift */; };
+		3FE0148B1B8D03C700B48433 /* VxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0148A1B8D03C700B48433 /* VxManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,10 @@
 		3FE0147A1B8D03A200B48433 /* VxLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VxLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE0147F1B8D03A200B48433 /* VxLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VxLibTests.swift; sourceTree = "<group>"; };
 		3FE014811B8D03A200B48433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE0148A1B8D03C700B48433 /* VxManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VxManager.swift; sourceTree = "<group>"; };
+		5AFD7EB3D4E8D6091D3E9EBB /* Pods-VxLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VxLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-VxLib/Pods-VxLib.release.xcconfig"; sourceTree = "<group>"; };
+		A17479D76EA38CE38F9979CC /* Pods_VxLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VxLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A212265DE7CA765359AA5B03 /* Pods-VxLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VxLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VxLib/Pods-VxLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF43826FFEE2B9331FA19DC /* Pods_VxLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +57,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35D775E7D400164DB21270F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A212265DE7CA765359AA5B03 /* Pods-VxLib.debug.xcconfig */,
+				5AFD7EB3D4E8D6091D3E9EBB /* Pods-VxLib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3FE014661B8D03A200B48433 = {
 			isa = PBXGroup;
 			children = (
 				3FE014721B8D03A200B48433 /* VxLib */,
 				3FE0147E1B8D03A200B48433 /* VxLibTests */,
 				3FE014711B8D03A200B48433 /* Products */,
+				35D775E7D400164DB21270F2 /* Pods */,
+				937270AF6F1B11B9C470AC5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +91,7 @@
 			children = (
 				3FE014731B8D03A200B48433 /* VxLib.h */,
 				3FE014751B8D03A200B48433 /* Info.plist */,
+				3FE0148A1B8D03C700B48433 /* VxManager.swift */,
 			);
 			path = VxLib;
 			sourceTree = "<group>";
@@ -84,6 +103,14 @@
 				3FE014811B8D03A200B48433 /* Info.plist */,
 			);
 			path = VxLibTests;
+			sourceTree = "<group>";
+		};
+		937270AF6F1B11B9C470AC5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A17479D76EA38CE38F9979CC /* Pods_VxLib.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FE014841B8D03A200B48433 /* Build configuration list for PBXNativeTarget "VxLib" */;
 			buildPhases = (
+				3C6DFE2FAEBBF15566666C87 /* Check Pods Manifest.lock */,
 				3FE0146B1B8D03A200B48433 /* Sources */,
 				3FE0146C1B8D03A200B48433 /* Frameworks */,
 				3FE0146D1B8D03A200B48433 /* Headers */,
 				3FE0146E1B8D03A200B48433 /* Resources */,
+				10A6985A37F69C101A5CBB29 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +171,7 @@
 		3FE014671B8D03A200B48433 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = saadiKompany;
 				TargetAttributes = {
@@ -188,11 +218,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10A6985A37F69C101A5CBB29 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VxLib/Pods-VxLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C6DFE2FAEBBF15566666C87 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FE0146B1B8D03A200B48433 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE0148B1B8D03C700B48433 /* VxManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +370,9 @@
 		};
 		3FE014851B8D03A200B48433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A212265DE7CA765359AA5B03 /* Pods-VxLib.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +383,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.saadiKompany.VxLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3FE014861B8D03A200B48433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AFD7EB3D4E8D6091D3E9EBB /* Pods-VxLib.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -375,6 +444,7 @@
 				3FE014861B8D03A200B48433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FE014871B8D03A200B48433 /* Build configuration list for PBXNativeTarget "VxLibTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +453,7 @@
 				3FE014891B8D03A200B48433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
